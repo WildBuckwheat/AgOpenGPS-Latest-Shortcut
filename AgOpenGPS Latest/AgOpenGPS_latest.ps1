@@ -7,7 +7,7 @@ if (-Not (Test-Path "C:\AgOpenGPS Latest\AgOpenGPSVersionsPath.txt")) {
     Write-Host "Please enter the path of the folder where you keep AgOpenGPS releases"
     Write-Host "This may be a folder like ""C:\AgOpenGPS Releases"" (the path you enter should not include quotation marks)"
     $AgOpenGPS_versionsPath = Read-Host "AgOpenGPS releases path"
-    New-Item -Path . -Name "AgOpenGPSVersionsPath.txt" -ItemType "File" -Value $AgOpenGPS_VersionsPath
+    New-Item -Path "C:\AgOpenGPS Latest" -Name "AgOpenGPSVersionsPath.txt" -ItemType "File" -Value $AgOpenGPS_VersionsPath
     Exit
 } 
 else {
