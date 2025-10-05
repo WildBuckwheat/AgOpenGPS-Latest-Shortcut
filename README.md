@@ -5,7 +5,9 @@ Is it especially painfull because you have tablet buttons set up to launch AgOpe
 
 I feel your pain.
 
-With this simple script you can have a shortcut that automatically launches your latest local version. You can leave this shortcut on your desktop and you will not need to change it when you download a new AgOpenGPS release. If you have a tablet button shortcut, just point it at this shortcut.
+With this simple script you can have a shortcut that automatically launches the latest AgOpenGPS version that you have saved locally in a specified.
+
+You can leave this shortcut on your desktop and you will not need to change it when you download a new AgOpenGPS release. If you have a tablet button shortcut, just point it at this shortcut.
 
 
 
@@ -23,6 +25,8 @@ With this simple script you can have a shortcut that automatically launches your
 <img src="https://github.com/WildBuckwheat/AgOpenGPS-Latest-Shortcut/blob/main/Images/prompt.jpg" height="350">
 
 5. Double click the desktop shortcut again. The latest version of AgOpenGPS in your version storage path should launch.
+
+6. That's it. Subsequent clicks on the desktop shortcut will launch the latest version.
 
 
 If you wish to change the folder that is parsed for the latest version, you can delete or edit the file located at C:\AgOpenGPS Latest\AgOpenGPSVersionsPath.txt
