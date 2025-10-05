@@ -11,7 +11,7 @@ if (-Not (Test-Path "C:\AgOpenGPS Latest\AgOpenGPSVersionsPath.txt")) {
     Exit
 } 
 else {
-    $AgOpenGPS_versionsPath = Get-Content -Path .\AgOpenGPSVersionsPath.txt -TotalCount 1
+    $AgOpenGPS_versionsPath = Get-Content -Path "C:\AgOpenGPS Latest\AgOpenGPSVersionsPath.txt" -TotalCount 1
     $latest = dir $AgOpenGPS_versionsPath agopengps.exe -recurse |select fullname, @{n="Version";e={[version]$_.VersionInfo.FileVersionRaw}} | sort Version | select -Last 1
     #Write-Host $latest.FullName
     Start-Process $latest.FullName
